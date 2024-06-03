@@ -1,0 +1,31 @@
+@PORT = 3000
+@HOST = http://localhost:{{PORT}}
+
+
+
+
+GET {{HOST}}/api/autores
+Authorization: API-KEY
+###
+
+GET {{HOST}}/api/autores/1
+Authorization: API-KEY
+###
+
+
+
+
+POST {{HOST}}/api/autores
+Authorization: API-KEY
+Content-Type: application/json
+
+
+
+{
+    "nombre":"victor",
+    "email":"victor@gmail.com",
+    "imagen": "pepe.jpg"
+}
+
+
+
